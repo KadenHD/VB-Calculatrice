@@ -61,32 +61,12 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property backspace() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("backspace", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Recherche une ressource localisée de type System.Byte[].
         '''</summary>
         Friend ReadOnly Property Calculator() As Byte()
             Get
                 Dim obj As Object = ResourceManager.GetObject("Calculator", resourceCulture)
                 Return CType(obj,Byte())
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property off() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("off", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
     End Module
