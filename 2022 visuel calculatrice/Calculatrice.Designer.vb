@@ -44,226 +44,253 @@ Partial Class Form_Calculatrice
         Me.BT_CE = New System.Windows.Forms.Button()
         Me.BT_Quitter = New System.Windows.Forms.Button()
         Me.BT_Ajouter = New System.Windows.Forms.Button()
+        Me.BT_Changer_Signe = New System.Windows.Forms.Button()
+        Me.TB_Log = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'TB_Affichage
         '
         Me.TB_Affichage.BackColor = System.Drawing.Color.Silver
-        Me.TB_Affichage.Location = New System.Drawing.Point(10, 9)
+        Me.TB_Affichage.Location = New System.Drawing.Point(13, 28)
         Me.TB_Affichage.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TB_Affichage.Name = "TB_Affichage"
         Me.TB_Affichage.ReadOnly = True
-        Me.TB_Affichage.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.TB_Affichage.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.TB_Affichage.Size = New System.Drawing.Size(156, 23)
-        Me.TB_Affichage.TabIndex = 0
-        Me.TB_Affichage.Text = "Hello"
+        Me.TB_Affichage.TabIndex = 9999
+        Me.TB_Affichage.Text = "0"
+        Me.TB_Affichage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'BT_0
         '
-        Me.BT_0.Location = New System.Drawing.Point(51, 172)
+        Me.BT_0.Location = New System.Drawing.Point(53, 192)
         Me.BT_0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_0.Name = "BT_0"
         Me.BT_0.Size = New System.Drawing.Size(35, 30)
-        Me.BT_0.TabIndex = 2
+        Me.BT_0.TabIndex = 0
         Me.BT_0.Text = "0"
         Me.BT_0.UseVisualStyleBackColor = True
         '
         'BT_Virgule
         '
-        Me.BT_Virgule.Location = New System.Drawing.Point(91, 172)
+        Me.BT_Virgule.Location = New System.Drawing.Point(93, 192)
         Me.BT_Virgule.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Virgule.Name = "BT_Virgule"
         Me.BT_Virgule.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Virgule.TabIndex = 3
+        Me.BT_Virgule.TabIndex = 10
         Me.BT_Virgule.Text = ","
         Me.BT_Virgule.UseVisualStyleBackColor = True
         '
         'BT_Egal
         '
-        Me.BT_Egal.Location = New System.Drawing.Point(131, 172)
+        Me.BT_Egal.Location = New System.Drawing.Point(133, 192)
         Me.BT_Egal.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Egal.Name = "BT_Egal"
         Me.BT_Egal.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Egal.TabIndex = 4
+        Me.BT_Egal.TabIndex = 19
         Me.BT_Egal.Text = "="
         Me.BT_Egal.UseVisualStyleBackColor = True
         '
         'BT_1
         '
-        Me.BT_1.Location = New System.Drawing.Point(10, 137)
+        Me.BT_1.Location = New System.Drawing.Point(12, 157)
         Me.BT_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_1.Name = "BT_1"
         Me.BT_1.Size = New System.Drawing.Size(35, 30)
-        Me.BT_1.TabIndex = 5
+        Me.BT_1.TabIndex = 1
         Me.BT_1.Text = "1"
         Me.BT_1.UseVisualStyleBackColor = True
         '
         'BT_2
         '
-        Me.BT_2.Location = New System.Drawing.Point(51, 137)
+        Me.BT_2.Location = New System.Drawing.Point(53, 157)
         Me.BT_2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_2.Name = "BT_2"
         Me.BT_2.Size = New System.Drawing.Size(35, 30)
-        Me.BT_2.TabIndex = 6
+        Me.BT_2.TabIndex = 2
         Me.BT_2.Text = "2"
         Me.BT_2.UseVisualStyleBackColor = True
         '
         'BT_3
         '
-        Me.BT_3.Location = New System.Drawing.Point(91, 137)
+        Me.BT_3.Location = New System.Drawing.Point(93, 157)
         Me.BT_3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_3.Name = "BT_3"
         Me.BT_3.Size = New System.Drawing.Size(35, 30)
-        Me.BT_3.TabIndex = 7
+        Me.BT_3.TabIndex = 3
         Me.BT_3.Text = "3"
         Me.BT_3.UseVisualStyleBackColor = True
         '
         'BT_Soustraire
         '
-        Me.BT_Soustraire.Location = New System.Drawing.Point(132, 103)
+        Me.BT_Soustraire.Location = New System.Drawing.Point(134, 123)
         Me.BT_Soustraire.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Soustraire.Name = "BT_Soustraire"
         Me.BT_Soustraire.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Soustraire.TabIndex = 8
+        Me.BT_Soustraire.TabIndex = 17
         Me.BT_Soustraire.Text = "-"
         Me.BT_Soustraire.UseVisualStyleBackColor = True
         '
         'BT_4
         '
-        Me.BT_4.Location = New System.Drawing.Point(10, 103)
+        Me.BT_4.Location = New System.Drawing.Point(12, 123)
         Me.BT_4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_4.Name = "BT_4"
         Me.BT_4.Size = New System.Drawing.Size(35, 30)
-        Me.BT_4.TabIndex = 9
+        Me.BT_4.TabIndex = 4
         Me.BT_4.Text = "4"
         Me.BT_4.UseVisualStyleBackColor = True
         '
         'BT_5
         '
-        Me.BT_5.Location = New System.Drawing.Point(51, 103)
+        Me.BT_5.Location = New System.Drawing.Point(53, 123)
         Me.BT_5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_5.Name = "BT_5"
         Me.BT_5.Size = New System.Drawing.Size(35, 30)
-        Me.BT_5.TabIndex = 10
+        Me.BT_5.TabIndex = 5
         Me.BT_5.Text = "5"
         Me.BT_5.UseVisualStyleBackColor = True
         '
         'BT_6
         '
-        Me.BT_6.Location = New System.Drawing.Point(91, 103)
+        Me.BT_6.Location = New System.Drawing.Point(93, 123)
         Me.BT_6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_6.Name = "BT_6"
         Me.BT_6.Size = New System.Drawing.Size(35, 30)
-        Me.BT_6.TabIndex = 11
+        Me.BT_6.TabIndex = 6
         Me.BT_6.Text = "6"
         Me.BT_6.UseVisualStyleBackColor = True
         '
         'BT_Multiplier
         '
-        Me.BT_Multiplier.Location = New System.Drawing.Point(132, 68)
+        Me.BT_Multiplier.Location = New System.Drawing.Point(134, 88)
         Me.BT_Multiplier.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Multiplier.Name = "BT_Multiplier"
         Me.BT_Multiplier.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Multiplier.TabIndex = 12
-        Me.BT_Multiplier.Text = "x"
+        Me.BT_Multiplier.TabIndex = 16
+        Me.BT_Multiplier.Text = "X"
         Me.BT_Multiplier.UseVisualStyleBackColor = True
         '
         'BT_7
         '
-        Me.BT_7.Location = New System.Drawing.Point(10, 68)
+        Me.BT_7.Location = New System.Drawing.Point(12, 88)
         Me.BT_7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_7.Name = "BT_7"
         Me.BT_7.Size = New System.Drawing.Size(35, 30)
-        Me.BT_7.TabIndex = 13
+        Me.BT_7.TabIndex = 7
         Me.BT_7.Text = "7"
         Me.BT_7.UseVisualStyleBackColor = True
         '
         'BT_8
         '
-        Me.BT_8.Location = New System.Drawing.Point(51, 68)
+        Me.BT_8.Location = New System.Drawing.Point(53, 88)
         Me.BT_8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_8.Name = "BT_8"
         Me.BT_8.Size = New System.Drawing.Size(35, 30)
-        Me.BT_8.TabIndex = 14
+        Me.BT_8.TabIndex = 8
         Me.BT_8.Text = "8"
         Me.BT_8.UseVisualStyleBackColor = True
         '
         'BT_9
         '
-        Me.BT_9.Location = New System.Drawing.Point(92, 68)
+        Me.BT_9.Location = New System.Drawing.Point(94, 88)
         Me.BT_9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_9.Name = "BT_9"
         Me.BT_9.Size = New System.Drawing.Size(35, 30)
-        Me.BT_9.TabIndex = 15
+        Me.BT_9.TabIndex = 9
         Me.BT_9.Text = "9"
         Me.BT_9.UseVisualStyleBackColor = True
         '
         'BT_Diviser
         '
-        Me.BT_Diviser.Location = New System.Drawing.Point(91, 34)
+        Me.BT_Diviser.Location = New System.Drawing.Point(93, 54)
         Me.BT_Diviser.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Diviser.Name = "BT_Diviser"
         Me.BT_Diviser.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Diviser.TabIndex = 16
+        Me.BT_Diviser.TabIndex = 15
         Me.BT_Diviser.Text = "/"
         Me.BT_Diviser.UseVisualStyleBackColor = True
         '
         'BT_Supprimer
         '
         Me.BT_Supprimer.Image = Global._2022_visuel_calculatrice.My.Resources.Resources.backspace
-        Me.BT_Supprimer.Location = New System.Drawing.Point(10, 171)
+        Me.BT_Supprimer.Location = New System.Drawing.Point(12, 192)
         Me.BT_Supprimer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Supprimer.Name = "BT_Supprimer"
         Me.BT_Supprimer.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Supprimer.TabIndex = 18
+        Me.BT_Supprimer.TabIndex = 11
         Me.BT_Supprimer.UseVisualStyleBackColor = True
         '
         'BT_C
         '
-        Me.BT_C.Location = New System.Drawing.Point(51, 34)
+        Me.BT_C.Location = New System.Drawing.Point(12, 54)
         Me.BT_C.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_C.Name = "BT_C"
         Me.BT_C.Size = New System.Drawing.Size(35, 30)
-        Me.BT_C.TabIndex = 19
+        Me.BT_C.TabIndex = 12
         Me.BT_C.Text = "C"
         Me.BT_C.UseVisualStyleBackColor = True
         '
         'BT_CE
         '
-        Me.BT_CE.Location = New System.Drawing.Point(10, 34)
+        Me.BT_CE.Location = New System.Drawing.Point(53, 54)
         Me.BT_CE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_CE.Name = "BT_CE"
         Me.BT_CE.Size = New System.Drawing.Size(35, 30)
-        Me.BT_CE.TabIndex = 20
+        Me.BT_CE.TabIndex = 13
         Me.BT_CE.Text = "CE"
         Me.BT_CE.UseVisualStyleBackColor = True
         '
         'BT_Quitter
         '
         Me.BT_Quitter.Image = Global._2022_visuel_calculatrice.My.Resources.Resources.off
-        Me.BT_Quitter.Location = New System.Drawing.Point(132, 34)
+        Me.BT_Quitter.Location = New System.Drawing.Point(134, 54)
         Me.BT_Quitter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Quitter.Name = "BT_Quitter"
-        Me.BT_Quitter.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Quitter.TabIndex = 17
+        Me.BT_Quitter.Size = New System.Drawing.Size(35, 15)
+        Me.BT_Quitter.TabIndex = 20
         Me.BT_Quitter.UseVisualStyleBackColor = True
         '
         'BT_Ajouter
         '
-        Me.BT_Ajouter.Location = New System.Drawing.Point(132, 137)
+        Me.BT_Ajouter.Location = New System.Drawing.Point(134, 157)
         Me.BT_Ajouter.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.BT_Ajouter.Name = "BT_Ajouter"
         Me.BT_Ajouter.Size = New System.Drawing.Size(35, 30)
-        Me.BT_Ajouter.TabIndex = 21
+        Me.BT_Ajouter.TabIndex = 18
         Me.BT_Ajouter.Text = "+"
         Me.BT_Ajouter.UseVisualStyleBackColor = True
+        '
+        'BT_Changer_Signe
+        '
+        Me.BT_Changer_Signe.Location = New System.Drawing.Point(134, 69)
+        Me.BT_Changer_Signe.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BT_Changer_Signe.Name = "BT_Changer_Signe"
+        Me.BT_Changer_Signe.Size = New System.Drawing.Size(35, 15)
+        Me.BT_Changer_Signe.TabIndex = 14
+        Me.BT_Changer_Signe.Text = "+/-"
+        Me.BT_Changer_Signe.UseVisualStyleBackColor = True
+        '
+        'TB_Log
+        '
+        Me.TB_Log.BackColor = System.Drawing.Color.Silver
+        Me.TB_Log.Location = New System.Drawing.Point(13, 11)
+        Me.TB_Log.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TB_Log.Name = "TB_Log"
+        Me.TB_Log.ReadOnly = True
+        Me.TB_Log.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TB_Log.Size = New System.Drawing.Size(156, 23)
+        Me.TB_Log.TabIndex = 9999
+        Me.TB_Log.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Form_Calculatrice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(176, 208)
+        Me.ClientSize = New System.Drawing.Size(181, 234)
+        Me.Controls.Add(Me.TB_Log)
+        Me.Controls.Add(Me.BT_Changer_Signe)
         Me.Controls.Add(Me.BT_Ajouter)
         Me.Controls.Add(Me.BT_CE)
         Me.Controls.Add(Me.BT_C)
@@ -287,9 +314,11 @@ Partial Class Form_Calculatrice
         Me.Controls.Add(Me.TB_Affichage)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.Name = "Form_Calculatrice"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculatrice"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -317,4 +346,6 @@ Partial Class Form_Calculatrice
     Friend WithEvents BT_CE As Button
     Friend WithEvents BT_Quitter As Button
     Friend WithEvents BT_Ajouter As Button
+    Friend WithEvents BT_Changer_Signe As Button
+    Friend WithEvents TB_Log As TextBox
 End Class
